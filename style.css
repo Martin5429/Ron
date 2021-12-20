@@ -1,10 +1,8 @@
 body {
     margin: 0;
-}
-
-body {
     display: flex;
     flex-direction: column;
+    font-family: monospace;
 }
 
 .header {
@@ -13,7 +11,7 @@ body {
     align-items: center;
     padding: 0px 50px;
     background-color: #1F2937;
-    font-size: 24px;
+    font-size: 40px;
     color: #F9FAF8;
 }
 
@@ -25,10 +23,17 @@ body {
     color: #E5E7EB;
 }
 
+.header li {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .hero {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    column-gap: 100px;
     background-color: #1F2937;
     padding: 100px;
 }
@@ -64,6 +69,7 @@ body {
 .hero img {
     width: 300px;
     height: auto;
+    border: 2px solid #3882F6;
     border-radius: 10px;
 }
 
@@ -78,27 +84,21 @@ body {
 .info .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     column-gap: 50px;
+    margin-top: 20px;
 }
 
 .info .container .content {
-    width: 150px;
+    width: 200px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.info .container .content .box {
+.info .container .content img {
     border: 2px solid #3882F6;
     border-radius: 10px;
-    width: 150px;
-    height: 150px;
-}
-
-.info .container .content .box img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
+    width: 200px;
+    height: 200px;
 }
 
 .info .container .content .subtext {
@@ -126,7 +126,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #1F2937;
-    margin-left: 900px;
+    margin-left: 500px;
 }
 
 .call {
@@ -165,4 +165,17 @@ body {
     background-color: #3882F6;
     border: 2px solid #F9FAF8;
     border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    height: 100px;
+}
+
+.footer .text {
+    font-size: 18px;
+    color: #E5E7EB;
 }
